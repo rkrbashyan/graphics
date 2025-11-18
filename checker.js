@@ -1,6 +1,6 @@
 import fs from "node:fs/promises";
 
-const factor = 60;
+const factor = 100;
 const width = 16 * factor;
 const height = 9 * factor;
 const pixels = Array.from({ length: height }, () => Array(width).fill(0));

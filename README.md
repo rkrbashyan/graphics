@@ -10,6 +10,7 @@ A multi-process Node.js application that generates animated graphics frames in p
 
 -   Inspired by [rexim](https://gist.github.com/rexim/ef86bf70918034a5a57881456c0a0ccf)
 -   Plasma by [Xor](https://x.com/XorDev/status/1894123951401378051)
+-   Whirl by [Xor](https://x.com/XorDev/status/1986071686785986848)
 
 ## Features
 
@@ -36,7 +37,7 @@ node main.js
 Edit `main.js` to customize:
 
 ```javascript
-const output = "plasma"; // Animation type: "plasma" or "checker"
+const output = "plasma"; // Animation type: "plasma", "checker" or "whirl"
 const totalFrames = 240; // Number of frames to generate
 ```
 
@@ -50,7 +51,7 @@ const totalFrames = 240; // Number of frames to generate
     - Waits for all workers to complete
     - Compiles frames into video using FFmpeg
 
-2. **Worker Process** (`plasma.js` / `checker.js`):
+2. **Worker Process** (`plasma.js` / `checker.js` / `whirl.js`):
 
     - Receives frame range via IPC
     - Generates assigned frames
@@ -64,7 +65,7 @@ const totalFrames = 240; // Number of frames to generate
 ## Output
 
 -   Frames: `./output/output_00.ppm`, `output_01.ppm`, etc.
--   Video: `./plasma.mp4` (or `checker.mp4` depending on configuration)
+-   Video: `./plasma.mp4` (`whirl.mp4` or `checker.mp4` depending on configuration)
 
 ## Performance
 

@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import { Vec2, Vec4 } from "./math.js";
 
-const factor = 60;
+const factor = 100;
 const width = 16 * factor;
 const height = 9 * factor;
 const pixels = Array.from({ length: height }, () => Array(width).fill(0));

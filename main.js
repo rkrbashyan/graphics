@@ -2,7 +2,7 @@ import { fork, spawn } from "node:child_process";
 import os from "node:os";
 import fs from "node:fs/promises";
 
-const output = "plasma"; // checker
+const output = "checker"; // checker, plasma or whirl
 
 const numCPUs = os.cpus().length;
 const totalFrames = 240;
