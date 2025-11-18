@@ -12,6 +12,9 @@ https://github.com/user-attachments/assets/8dcc73a4-410c-40bb-a621-c83a20f8e34c
 
 A multi-process Node.js application that generates animated graphics frames in parallel and compiles them into a video using [FFmpeg](https://www.ffmpeg.org/).
 
+Inspired by [rexim](https://gist.github.com/rexim/ef86bf70918034a5a57881456c0a0ccf)
+Plasma by [Xor](https://x.com/XorDev/status/1894123951401378051)
+
 ## Features
 
 -   **Parallel Processing**: Utilizes all CPU cores via `child_process.fork()` to generate frames concurrently

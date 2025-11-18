@@ -14,6 +14,9 @@ async function generateFrames(frameStart, frameEnd, totalFrames) {
 
         for (let y = 0; y < height; y++) {
             for (let x = 0; x < width; x++) {
+                //////////////////////////////
+                // https://x.com/XorDev/status/1894123951401378051
+                //////////////////////////////
                 let o = new Vec4();
                 const FC = new Vec2(x, y);
                 const p = FC.multScalar(2.0).subtract(r).divideScalar(r.y);
